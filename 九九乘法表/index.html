@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="#e0f1ff">
+    <table cellpadding="6" cellspacing="0" style="border-collapse: collapse;border:none;">
+        <script>
+            for(var i = 1;i < 10;i++){
+                document.write("<tr>");
+                for(var j = 1;j < 10;j++){
+                    if(j <= i){
+                        let denshi = `${ j } * ${ i } = ${ i * j }`;
+                        document.write("<td style='border:2px solid #004B8A;background:#FFFFFF;' >"+denshi+"</td>");
+                    }
+                    else{
+                        document.write("<td style='border:none;'></td>");
+                    }
+                }
+                document.write("</tr>");
+            }
+        </script>
+    </table>
+</body>
+</html>
